@@ -61,7 +61,7 @@ while prog is True:
 
         sort_path_dict = sorted(path_list.items(), key=lambda x:x[1])
         sorted_path_dict = dict(sort_path_dict)
-        print(sorted_path_dict)
+        # print(sorted_path_dict)
 
         sorted_path_values = list(sorted_path_dict.values())
         sorted_path_keys = list(sorted_path_dict.keys())
