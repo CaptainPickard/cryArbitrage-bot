@@ -59,14 +59,16 @@ while prog is True:
                      'Gateio':gateio_dif, 
                      'FTX':ftx_dif}
 
-        sorted_path_dict = sorted(path_list.items(), key=lambda x:x[1])
-        # print(sorted_path_dict)
+        sort_path_dict = sorted(path_list.items(), key=lambda x:x[1])
+        sorted_path_dict = dict(sort_path_dict)
+        print(sorted_path_dict)
 
-        # sorted_path_list = list(sorted_path_dict.values())
+        sorted_path_values = list(sorted_path_dict.values())
+        sorted_path_keys = list(sorted_path_dict.keys())
 
         print('~Optimal Exchange Trade Path~')
-        print(f'Buy on {str(sorted_path_dict[0])}, Sell on {str(sorted_path_dict[-1])}')
-        # print(f'Arbitrage Dif: > {sorted_path_dict[0] - sorted_path_dict[-1]}')
+        print(f'Buy on {sorted_path_keys[0]}, Sell on {sorted_path_keys[-1]}')
+        print(f'Arbitrage Dif: > {sorted_path_values[-1] - sorted_path_values[0]}')
 
         print(f"\n{text:_^30}\n")
 
