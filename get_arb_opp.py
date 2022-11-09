@@ -33,7 +33,6 @@ and runs the arbitrage finder automatically.
 
 '''
 
-
 prog = True
 while prog is True:
 
