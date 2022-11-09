@@ -12,6 +12,7 @@ gateio = ccxt.gate()
 ftx = ccxt.ftx() 
 text = "_"
 
+
 '''
 --> Itterations
 
