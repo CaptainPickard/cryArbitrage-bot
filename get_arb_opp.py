@@ -1,5 +1,7 @@
 import ccxt
 import time
+import traceback
+import sys
 
 binance = ccxt.binance() 
 bitfinex = ccxt.bitfinex() 
@@ -17,13 +19,15 @@ while prog is True:
     phrase = input('Please enter a Crypto Acronym: >>> ')
     final = phrase.upper()
     
-
-    binance_ticker = binance.fetch_ticker(f'{final}/USDT') 
-    bitfinex_ticker = bitfinex.fetch_ticker(f'{final}/USDT') 
-    bittrex_ticker = bittrex.fetch_ticker(f'{final}/USDT') 
-    poloniex_ticker = poloniex.fetch_ticker(f'{final}/USDT') 
-    gateio_ticker = gateio.fetch_ticker(f'{final}/USDT') 
-    ftx_ticker = ftx.fetch_ticker(f'{final}/USDT') 
+    try:
+        binance_ticker = binance.fetch_ticker(f'{final}/USDT') 
+        bitfinex_ticker = bitfinex.fetch_ticker(f'{final}/USDT') 
+        bittrex_ticker = bittrex.fetch_ticker(f'{final}/USDT') 
+        poloniex_ticker = poloniex.fetch_ticker(f'{final}/USDT') 
+        gateio_ticker = gateio.fetch_ticker(f'{final}/USDT') 
+        ftx_ticker = ftx.fetch_ticker(f'{final}/USDT') 
+    except Exception as e:
+        print(traceback.format_exc())
 
     # print(binance_ticker, bitfinex_ticker, bittrex_ticker, poloniex_ticker)
     
