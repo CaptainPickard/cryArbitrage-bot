@@ -21,11 +21,12 @@ binance_ticker = binance.fetch_ticker(f'{final}/USDT')
 bitfinex_ticker = bitfinex.fetch_ticker(f'{final}/USDT') 
 bittrex_ticker = bittrex.fetch_ticker(f'{final}/USDT') 
 poloniex_ticker = poloniex.fetch_ticker(f'{final}/USDT') 
-# bybit_ticker = bybit.fetch_ticker(f'{final}/USDT') 
 gateio_ticker = gateio.fetch_ticker(f'{final}/USDT') 
 ftx_ticker = ftx.fetch_ticker(f'{final}/USDT') 
 
 # print(binance_ticker, bitfinex_ticker, bittrex_ticker, poloniex_ticker)
+
+
 text = "_"
 print(f"\n{text:_^30}\n")
 
@@ -48,6 +49,8 @@ ftx_dif = float(ftx_ticker['last'])
 print(f"--> FTX : {ftx_dif:^5}")
 
 print(f"\n{text:_^30}\n")
+
+
 
 
 # Binance & Bitfinex
