@@ -26,7 +26,8 @@ gateio_ticker = gateio.fetch_ticker(f'{final}/USDT')
 ftx_ticker = ftx.fetch_ticker(f'{final}/USDT') 
 
 # print(binance_ticker, bitfinex_ticker, bittrex_ticker, poloniex_ticker)
-
+text = "_"
+print(f"\n{text:_^30}\n")
 
 binance_dif = float(binance_ticker['last'])
 print(f"--> Binance : {binance_dif:^5}")
@@ -46,6 +47,7 @@ print(f"--> Gateio : {gateio_dif:^5}")
 ftx_dif = float(ftx_ticker['last'])
 print(f"--> FTX : {ftx_dif:^5}")
 
+print(f"\n{text:_^30}\n")
 
 
 # Binance & Bitfinex
@@ -57,6 +59,7 @@ elif binance_ticker['last'] > bitfinex_ticker['last']:
     print(f'Arbitrage Dif: > {binance_dif - bitfinex_dif}')
 else:
     print('No arbitrage opportunity.') 
+print(f"\n{text:_^10}\n")
 
 
 # Bianace & Bittrex
@@ -68,6 +71,7 @@ elif binance_ticker['last'] > bittrex_ticker['last']:
     print(f'Arbitrage Dif: > {binance_dif- bittrex_dif}')
 else:
     print('No arbitrage opportunity.') 
+print(f"\n{text:_^10}\n")
 
 
 # Bianace & Poloniex
@@ -79,6 +83,7 @@ elif binance_ticker['last'] > poloniex_ticker['last']:
     print(f'Arbitrage Dif: > {binance_dif - poloniex_dif}')
 else:
     print('No arbitrage opportunity.') 
+print(f"\n{text:_^10}\n")
 
 
 # Bianace & Gateio
@@ -90,6 +95,7 @@ elif binance_ticker['last'] > gateio_ticker['last']:
     print(f'Arbitrage Dif: > {binance_dif - gateio_dif}')
 else:
     print('No arbitrage opportunity.') 
+print(f"\n{text:_^10}\n")
 
 
 # Bianace & FTX
@@ -101,3 +107,4 @@ elif binance_ticker['last'] > ftx_ticker['last']:
     print(f'Arbitrage Dif: > {binance_dif - ftx_dif}')
 else:
     print('No arbitrage opportunity.') 
+print(f"\n{text:_^10}\n")
