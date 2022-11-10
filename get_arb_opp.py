@@ -17,7 +17,7 @@ text = "_"
 '''
 --> Itterations
 
-1. create a control flow that take the top 5 coins on CMC 
+1. create a control flow that take the top 5 coins by market cap 
 and runs the arbitrage finder automatically.
 
 2. Keep options for running the arbitrage finder on user input coins.
@@ -33,6 +33,7 @@ and runs the arbitrage finder automatically.
 1. Create a nicer output, possibly a GUI or Flack app for the web.
 
 '''
+
 
 prog = True
 while prog is True:
