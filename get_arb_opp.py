@@ -2,6 +2,7 @@ import ccxt
 import time
 import traceback
 import sys
+import get_cg_ticker
 
 binance = ccxt.binance() 
 bitfinex = ccxt.bitfinex() 
