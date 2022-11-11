@@ -13,26 +13,6 @@ from get_cg_ticker import *
 # ftx = ccxt.ftx() 
 text = "_"
 
-
-'''
---> Itterations
-
-1. create a control flow that take the top 5 coins by market cap 
-and runs the arbitrage finder automatically.
-
-2. Keep options for running the arbitrage finder on user input coins.
-
-3. Recreate the algorith in using OOP standards.
-
-4. Add more exchanges.
-
-5. Create output file that logs each arbitrage opportunity, with timestamp.
-
---> Strech goals
-
-1. Create a nicer output, possibly a GUI or Flack app for the web.
-
-'''
 # get_tickers = get_cg_data()
 
 prog = True
