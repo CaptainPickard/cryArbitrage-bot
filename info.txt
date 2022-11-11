@@ -3,7 +3,6 @@
 {'id': 'tether', 'symbol': 'usdt', 'name': 'Tether', 'image': 'https://assets.coingecko.com/coins/images/325/large/tether.png?1667933073', 'current_price': 0.99825, 'market_cap': 69806859746, 'market_cap_rank': 3, 'fully_diluted_valuation': 69806859746, 'total_volume': 113954804101, 'high_24h': 1.02, 'low_24h': 0.960951, 'price_change_24h': -0.00271972264903031, 'price_change_percentage_24h': -0.27171, 'market_cap_change_24h': 108580882, 'market_cap_change_percentage_24h': 0.15579, 'circulating_supply': 69613437845.7923, 'total_supply': 69613437845.7923, 'max_supply': None, 'ath': 1.32, 'ath_change_percentage': -24.20965, 'ath_date': '2018-07-24T00:00:00.000Z', 'atl': 0.572521, 'atl_change_percentage': 75.15139, 'atl_date': '2015-03-02T00:00:00.000Z', 'roi': None, 'last_updated': '2022-11-10T02:46:36.872Z'}
 
 
-
 '''
 --> Itterations
 
