@@ -2,15 +2,15 @@ import ccxt
 import time
 import traceback
 import sys
-import get_cg_ticker
+from get_cg_ticker import *
 
-binance = ccxt.binance() 
-bitfinex = ccxt.bitfinex() 
-bittrex = ccxt.bittrex() 
-poloniex = ccxt.poloniex() 
-bybit = ccxt.bybit()   
-gateio = ccxt.gate() 
-ftx = ccxt.ftx() 
+# binance = ccxt.binance() 
+# bitfinex = ccxt.bitfinex() 
+# bittrex = ccxt.bittrex() 
+# poloniex = ccxt.poloniex() 
+# bybit = ccxt.bybit()   
+# gateio = ccxt.gate() 
+# ftx = ccxt.ftx() 
 text = "_"
 
 
@@ -33,7 +33,7 @@ and runs the arbitrage finder automatically.
 1. Create a nicer output, possibly a GUI or Flack app for the web.
 
 '''
-
+# get_tickers = get_cg_data()
 
 prog = True
 while prog is True:
@@ -43,6 +43,14 @@ while prog is True:
         final = phrase.upper()
         
         try:
+            binance = ccxt.binance() 
+            bitfinex = ccxt.bitfinex() 
+            bittrex = ccxt.bittrex() 
+            poloniex = ccxt.poloniex() 
+            bybit = ccxt.bybit()   
+            gateio = ccxt.gate() 
+            ftx = ccxt.ftx()    
+            
             binance_ticker = binance.fetch_ticker(f'{final}/USDT') 
             bitfinex_ticker = bitfinex.fetch_ticker(f'{final}/USDT') 
             bittrex_ticker = bittrex.fetch_ticker(f'{final}/USDT') 
@@ -54,6 +62,9 @@ while prog is True:
             print(sys.exc_info()[2])
 
         # print(binance_ticker, bitfinex_ticker, bittrex_ticker, poloniex_ticker)
+
+        # Get top 5 coins by market cap
+        get_cg_data()
         
         print(f"\n{text:_^30}\n")
 

@@ -1,8 +1,6 @@
 from pycoingecko import CoinGeckoAPI
 from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
-import json
-import config
 
 cg = CoinGeckoAPI()
 data = cg.get_coins_markets(vs_currency='usd')
@@ -20,4 +18,4 @@ def get_cg_data():
                 count += 1
     return list_1
 
-get_cg_data()
+# get_cg_data()
