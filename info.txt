@@ -1,3 +1,25 @@
 {'id': 'bitcoin', 'symbol': 'btc', 'name': 'Bitcoin', 'image': 'https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579', 'current_price': 16164.47, 'market_cap': 310847267420, 'market_cap_rank': 1, 'fully_diluted_valuation': 339933109777, 'total_volume': 77713465690, 'high_24h': 18749.92, 'low_24h': 15663.49, 'price_change_24h': -2129.0213125657065, 'price_change_percentage_24h': -11.63813, 'market_cap_change_24h': -41482520560.14154, 'market_cap_change_percentage_24h': -11.77378, 'circulating_supply': 19203168.0, 'total_supply': 21000000.0, 'max_supply': 21000000.0, 'ath': 69045, 'ath_change_percentage': -76.56845, 'ath_date': '2021-11-10T14:24:11.849Z', 'atl': 67.81, 'atl_change_percentage': 23758.57596, 'atl_date': '2013-07-06T00:00:00.000Z', 'roi': None, 'last_updated': '2022-11-10T02:48:54.692Z'}
 {'id': 'ethereum', 'symbol': 'eth', 'name': 'Ethereum', 'image': 'https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880', 'current_price': 1143.11, 'market_cap': 137711788992, 'market_cap_rank': 2, 'fully_diluted_valuation': 137711788992, 'total_volume': 30531504431, 'high_24h': 1324.27, 'low_24h': 1087.08, 'price_change_24h': -171.41478817591383, 'price_change_percentage_24h': -13.04006, 'market_cap_change_24h': -21550165846.7937, 'market_cap_change_percentage_24h': -13.53127, 'circulating_supply': 120520576.756509, 'total_supply': 120520576.756509, 'max_supply': None, 'ath': 4878.26, 'ath_change_percentage': -76.57687, 'ath_date': '2021-11-10T14:24:19.604Z', 'atl': 0.432979, 'atl_change_percentage': 263802.31909, 'atl_date': '2015-10-20T00:00:00.000Z', 'roi': {'times': 93.4684046525721, 'currency': 'btc', 'percentage': 9346.84046525721}, 'last_updated': '2022-11-10T02:48:57.633Z'}
 {'id': 'tether', 'symbol': 'usdt', 'name': 'Tether', 'image': 'https://assets.coingecko.com/coins/images/325/large/tether.png?1667933073', 'current_price': 0.99825, 'market_cap': 69806859746, 'market_cap_rank': 3, 'fully_diluted_valuation': 69806859746, 'total_volume': 113954804101, 'high_24h': 1.02, 'low_24h': 0.960951, 'price_change_24h': -0.00271972264903031, 'price_change_percentage_24h': -0.27171, 'market_cap_change_24h': 108580882, 'market_cap_change_percentage_24h': 0.15579, 'circulating_supply': 69613437845.7923, 'total_supply': 69613437845.7923, 'max_supply': None, 'ath': 1.32, 'ath_change_percentage': -24.20965, 'ath_date': '2018-07-24T00:00:00.000Z', 'atl': 0.572521, 'atl_change_percentage': 75.15139, 'atl_date': '2015-03-02T00:00:00.000Z', 'roi': None, 'last_updated': '2022-11-10T02:46:36.872Z'}
+
+
+
+'''
+--> Itterations
+
+1. create a control flow that take the top 5 coins by market cap 
+and runs the arbitrage finder automatically.
+
+2. Keep options for running the arbitrage finder on user input coins.
+
+3. Recreate the algorith in using OOP standards.
+
+4. Add more exchanges.
+
+5. Create output file that logs each arbitrage opportunity, with timestamp.
+
+--> Strech goals
+
+1. Create a nicer output, possibly a GUI or Flack app for the web.
+
+'''
