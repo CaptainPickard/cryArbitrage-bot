@@ -13,7 +13,7 @@ def get_cg_data():
             if 'usd' in i['symbol']:
                 pass
             else:
-                print(i['symbol'])
+                # print(i['symbol'])
                 list_1.append(i['symbol'])
                 count += 1
     return list_1

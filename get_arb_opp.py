@@ -1,7 +1,7 @@
 import ccxt
 import traceback
 import sys
-from get_cg_ticker import *
+# from get_cg_ticker import *
 
 # binance = ccxt.binance() 
 # bitfinex = ccxt.bitfinex() 
@@ -28,14 +28,14 @@ while prog is True:
             poloniex = ccxt.poloniex() 
             bybit = ccxt.bybit()   
             gateio = ccxt.gate() 
-            ftx = ccxt.ftx()    
+            # ftx = ccxt.ftx()    
             
             binance_ticker = binance.fetch_ticker(f'{final}/USDT') 
             bitfinex_ticker = bitfinex.fetch_ticker(f'{final}/USDT') 
             bittrex_ticker = bittrex.fetch_ticker(f'{final}/USDT') 
             poloniex_ticker = poloniex.fetch_ticker(f'{final}/USDT') 
             gateio_ticker = gateio.fetch_ticker(f'{final}/USDT') 
-            ftx_ticker = ftx.fetch_ticker(f'{final}/USDT') 
+            # ftx_ticker = ftx.fetch_ticker(f'{final}/USDT') 
         except Exception as e:
             print(traceback.format_exc())
             print(sys.exc_info()[2])
@@ -43,7 +43,7 @@ while prog is True:
         # print(binance_ticker, bitfinex_ticker, bittrex_ticker, poloniex_ticker)
 
         # Get top 5 coins by market cap
-        get_cg_data()
+        # get_cg_data()
         
         print(f"\n{text:_^30}\n")
 
@@ -62,8 +62,8 @@ while prog is True:
         gateio_dif = float(gateio_ticker['last'])
         print(f"--> Gateio : {gateio_dif:^5}")
 
-        ftx_dif = float(ftx_ticker['last'])
-        print(f"--> FTX : {ftx_dif:^5}")
+        # ftx_dif = float(ftx_ticker['last'])
+        # print(f"--> FTX : {ftx_dif:^5}")
 
         print(f"\n{text:_^30}\n")
 
@@ -75,7 +75,7 @@ while prog is True:
                         'Bittrex':bittrex_dif, 
                         'Poloniex':poloniex_dif, 
                         'Gateio':gateio_dif, 
-                        'FTX':ftx_dif}
+            }
 
             sort_path_dict = sorted(path_list.items(), key=lambda x:x[1])
             sorted_path_dict = dict(sort_path_dict)
@@ -142,15 +142,15 @@ while prog is True:
 
 
         # Bianace & FTX
-        if binance_ticker['last'] < ftx_ticker['last']: 
-            print(f'> Buy {final} on Binance and sell on FTX.') 
-            print(f'Arbitrage Dif: > {ftx_dif - binance_dif}')
-        elif binance_ticker['last'] > ftx_ticker['last']:
-            print(f'> Buy {final} on FTX and sell on Binance.') 
-            print(f'Arbitrage Dif: > {binance_dif - ftx_dif}')
-        else:
-            print('No arbitrage opportunity.') 
-        print(f"\n{text:_^10}\n")
+        # if binance_ticker['last'] < ftx_ticker['last']: 
+        #     print(f'> Buy {final} on Binance and sell on FTX.') 
+        #     print(f'Arbitrage Dif: > {ftx_dif - binance_dif}')
+        # elif binance_ticker['last'] > ftx_ticker['last']:
+        #     print(f'> Buy {final} on FTX and sell on Binance.') 
+        #     print(f'Arbitrage Dif: > {binance_dif - ftx_dif}')
+        # else:
+        #     print('No arbitrage opportunity.') 
+        # print(f"\n{text:_^10}\n")
 
     else:
         prog = False
