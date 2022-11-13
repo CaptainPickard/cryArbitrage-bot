@@ -1,5 +1,4 @@
 import ccxt
-import time
 import traceback
 import sys
 from get_cg_ticker import *
